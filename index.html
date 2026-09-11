@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Tosin Michael Oginni — Senior Software Engineer & Solution Architect</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+<title>Tosin Michael Oginni - Senior Software Engineer & Solution Architect</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
 <style>
 :root {
   --navy:#0D1B2A; --ink:#1A2B3C; --blue:#0A66C2; --cyan:#00C4CC;
   --gold:#F5A623; --purple:#7C3AED; --green:#10B981; --red:#EF4444;
   --light:#F0F4F9; --muted:#6B7C93; --white:#FFFFFF;
-  --border:rgba(10,102,194,0.15); --mono:'DM Mono',monospace;
-  --sans:'DM Sans',sans-serif; --display:'Syne',sans-serif;
+  --border:rgba(10,102,194,0.15); --mono:'Roboto Mono',monospace;
+  --sans:'Roboto',sans-serif; --display:'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
@@ -176,6 +176,24 @@ section{padding:90px 5vw;}
 .clink.primary{background:var(--cyan);color:var(--navy);border-color:var(--cyan);font-weight:500;}
 .clink.primary:hover{background:#00d8e0;box-shadow:0 8px 24px rgba(0,196,204,0.3);}
 
+/* CONTACT FORM */
+.contact-form{max-width:520px;margin:0 auto 2.5rem;text-align:left;display:flex;flex-direction:column;gap:1rem;}
+.form-row{display:flex;gap:1rem;flex-wrap:wrap;}
+.form-field{flex:1;min-width:200px;display:flex;flex-direction:column;gap:0.4rem;}
+.form-field label{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.45);}
+.form-field input,.form-field textarea{font-family:var(--sans);font-size:0.92rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.14);border-radius:4px;padding:0.7rem 0.9rem;color:var(--white);transition:border-color 0.2s,background 0.2s;resize:vertical;}
+.form-field input:focus,.form-field textarea:focus{outline:none;border-color:var(--cyan);background:rgba(0,196,204,0.05);}
+.form-field input::placeholder,.form-field textarea::placeholder{color:rgba(255,255,255,0.28);}
+.form-submit{font-family:var(--mono);font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.8rem 1.6rem;border-radius:4px;border:none;background:var(--cyan);color:var(--navy);font-weight:500;cursor:pointer;transition:all 0.2s;align-self:flex-start;}
+.form-submit:hover{background:#00d8e0;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,196,204,0.3);}
+.form-submit:disabled{opacity:0.6;cursor:not-allowed;transform:none;}
+.form-status{font-family:var(--mono);font-size:0.75rem;letter-spacing:0.04em;}
+.form-status.ok{color:var(--cyan);}
+.form-status.err{color:var(--red);}
+.contact-divider{display:flex;align-items:center;gap:0.8rem;max-width:520px;margin:0 auto 2rem;}
+.contact-divider::before,.contact-divider::after{content:'';flex:1;height:1px;background:rgba(255,255,255,0.1);}
+.contact-divider span{font-family:var(--mono);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.3);}
+
 /* FOOTER */
 footer{background:#060E17;padding:1.4rem 5vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.8rem;border-top:1px solid rgba(255,255,255,0.04);}
 footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.25);letter-spacing:0.06em;}
@@ -219,7 +237,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
     <div class="hero-text">
       <div class="hero-tag">Senior Software Engineer &amp; Solution Architect · Lagos, Nigeria</div>
       <h1>Engineering systems<br/>that <em>scale, ship,</em><br/>and endure.</h1>
-      <p class="hero-sub">13+ years delivering production-grade software across fintech, healthtech, security SaaS, IoT, and AI platforms — from architecture to deployment and everything after.</p>
+      <p class="hero-sub">13+ years delivering production-grade software across fintech, healthtech, security SaaS, IoT, and AI platforms - from architecture to deployment and everything after.</p>
       <div class="hero-roles">
         <a href="#fe-tab" class="role-pill pill-fe" onclick="openTab('fe')">Frontend &amp; Mobile</a>
         <a href="#be-tab" class="role-pill pill-be" onclick="openTab('be')">Backend Engineer</a>
@@ -277,7 +295,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
 
   <!-- FE TAB -->
   <div class="tab-pane active" id="pane-fe">
-    <p class="spec-intro">I build interfaces people actually enjoy using — fast, accessible, and consistent across web and mobile. My frontend work spans enterprise dashboards, offline-first field applications, real-time data visualisation, and cross-platform mobile apps in Flutter and React Native.</p>
+    <p class="spec-intro">I build interfaces people actually enjoy using - fast, accessible, and consistent across web and mobile. My frontend work spans enterprise dashboards, offline-first field applications, real-time data visualisation, and cross-platform mobile apps in Flutter and React Native.</p>
     <div class="spec-grid">
       <div>
         <div class="skill-group"><h4>Web Frameworks</h4><div class="skill-tags"><span class="stag">React.js</span><span class="stag">TypeScript</span><span class="stag">Next.js</span><span class="stag">Vue.js</span><span class="stag">PWA</span></div></div>
@@ -296,7 +314,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
 
   <!-- BE TAB -->
   <div class="tab-pane" id="pane-be">
-    <p class="spec-intro">Backend engineering is my deepest specialisation — 13+ years building APIs, microservices, event-driven systems, and data pipelines that run in production under real financial, healthcare, and enterprise workloads. I design for reliability, observability, and the failure modes that matter.</p>
+    <p class="spec-intro">Backend engineering is my deepest specialisation - 13+ years building APIs, microservices, event-driven systems, and data pipelines that run in production under real financial, healthcare, and enterprise workloads. I design for reliability, observability, and the failure modes that matter.</p>
     <div class="spec-grid">
       <div>
         <div class="skill-group"><h4>Languages</h4><div class="skill-tags"><span class="stag">Java</span><span class="stag">Kotlin</span><span class="stag">Python</span><span class="stag">TypeScript / Node.js</span><span class="stag">PHP</span></div></div>
@@ -315,7 +333,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
 
   <!-- ARCH TAB -->
   <div class="tab-pane" id="pane-arch">
-    <p class="spec-intro">As a Solution Architect I own the decisions that shape a system for years — service boundaries, data models, API contracts, infrastructure topology, and the trade-offs that make a platform reliable at scale. I have led architecture across fintech, healthtech, data engineering, and enterprise SaaS products.</p>
+    <p class="spec-intro">As a Solution Architect I own the decisions that shape a system for years - service boundaries, data models, API contracts, infrastructure topology, and the trade-offs that make a platform reliable at scale. I have led architecture across fintech, healthtech, data engineering, and enterprise SaaS products.</p>
     <div class="spec-grid">
       <div>
         <div class="skill-group"><h4>System Design</h4><div class="skill-tags"><span class="stag">Distributed Systems</span><span class="stag">Cloud-native Architecture</span><span class="stag">Multi-tenant SaaS</span><span class="stag">Modular Monolith</span><span class="stag">Microservices Decomposition</span></div></div>
@@ -332,7 +350,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
 
   <!-- AI SPEC TAB -->
   <div class="tab-pane" id="pane-ai-spec">
-    <p class="spec-intro">My AI engineering work focuses on integrating intelligent capabilities into production systems — matching engines, classification pipelines, intelligent search, and LLM-powered features — built on solid backend foundations rather than bolted-on demos. I build AI that ships and stays reliable.</p>
+    <p class="spec-intro">My AI engineering work focuses on integrating intelligent capabilities into production systems - matching engines, classification pipelines, intelligent search, and LLM-powered features - built on solid backend foundations rather than bolted-on demos. I build AI that ships and stays reliable.</p>
     <div class="spec-grid">
       <div>
         <div class="skill-group"><h4>AI Integration</h4><div class="skill-tags"><span class="stag purple">LLM APIs (OpenAI, Claude)</span><span class="stag purple">RAG Pipelines</span><span class="stag purple">Prompt Engineering</span><span class="stag purple">Embedding Models</span><span class="stag purple">AI-powered Search</span></div></div>
@@ -341,7 +359,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
       </div>
       <div>
         <div class="skill-group"><h4>Production AI</h4><div class="skill-tags"><span class="stag green">Async AI Processing</span><span class="stag green">AI Feature Flags</span><span class="stag green">Fallback Strategies</span><span class="stag green">Observability for AI</span><span class="stag green">Cost-aware API Usage</span></div></div>
-        <div class="skill-group"><h4>Applied Projects</h4><div class="skill-tags"><span class="stag purple">JuMa — AI Recruitment Matching</span><span class="stag purple">Trinity — AI Report Classification</span><span class="stag purple">Trinity — Intelligent Search</span><span class="stag purple">Lafia — Smart Practitioner Matching</span></div></div>
+        <div class="skill-group"><h4>Applied Projects</h4><div class="skill-tags"><span class="stag purple">JuMa - AI Recruitment Matching</span><span class="stag purple">Trinity - AI Report Classification</span><span class="stag purple">Trinity - Intelligent Search</span><span class="stag purple">Lafia - Smart Practitioner Matching</span></div></div>
         <div class="skill-group"><h4>Languages &amp; Tools</h4><div class="skill-tags"><span class="stag">Python</span><span class="stag">FastAPI</span><span class="stag">Java / Spring Boot</span><span class="stag">TypeScript / Node.js</span><span class="stag">Docker</span><span class="stag">AWS</span></div></div>
       </div>
     </div>
@@ -361,7 +379,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
       <div class="pcard-accent" style="background:linear-gradient(90deg,#0A66C2,#00C4CC);"></div>
       <div class="pcard-head"><div class="pcard-icon" style="background:rgba(10,102,194,0.1);">🚀</div><span class="pcard-domain d-data">Data Engineering</span></div>
       <div class="pcard-body">
-        <h3>Traferium — Cloud Data Migration</h3>
+        <h3>Traferium - Cloud Data Migration</h3>
         <p>Automated enterprise migration platform: Oracle→Snowflake, S3→Snowflake, Oracle→SaaS. Redesigned pipeline architecture end-to-end.</p>
         <div class="pcard-metrics">
           <div><div class="pm-val c">40×</div><div class="pm-lab">Throughput ↑</div></div>
@@ -377,8 +395,8 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
       <div class="pcard-accent" style="background:linear-gradient(90deg,#F5A623,#EF8C00);"></div>
       <div class="pcard-head"><div class="pcard-icon" style="background:rgba(245,166,35,0.1);">💳</div><span class="pcard-domain d-fintech">Fintech</span></div>
       <div class="pcard-body">
-        <h3>Seerbit — Payment Infrastructure</h3>
-        <p>Core payment products for Centric Gateway — IMTO, merchant gateway, API management, and embeddable payment modal. Live production across Nigeria and Africa.</p>
+        <h3>Seerbit - Payment Infrastructure</h3>
+        <p>Core payment products for Centric Gateway - IMTO, merchant gateway, API management, and embeddable payment modal. Live production across Nigeria and Africa.</p>
         <div class="pcard-metrics">
           <div><div class="pm-val c">3+</div><div class="pm-lab">Years Prod</div></div>
           <div><div class="pm-val">4</div><div class="pm-lab">Products</div></div>
@@ -393,7 +411,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
       <div class="pcard-accent" style="background:linear-gradient(90deg,#10B981,#059669);"></div>
       <div class="pcard-head"><div class="pcard-icon" style="background:rgba(16,185,129,0.1);">🎯</div><span class="pcard-domain d-ai">AI / Recruiting</span></div>
       <div class="pcard-body">
-        <h3>JuMa / JustMatch — AI Recruitment Platform</h3>
+        <h3>JuMa / JustMatch - AI Recruitment Platform</h3>
         <p>AI-driven recruiting platform matching candidates to roles via multi-dimensional profile compatibility. Led as team lead and solution architect.</p>
         <div class="pcard-metrics">
           <div><div class="pm-val c">AI</div><div class="pm-lab">Matching Engine</div></div>
@@ -409,7 +427,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
       <div class="pcard-accent" style="background:linear-gradient(90deg,#7C3AED,#5B21B6);"></div>
       <div class="pcard-head"><div class="pcard-icon" style="background:rgba(124,58,237,0.1);">🛡️</div><span class="pcard-domain d-security">Security SaaS</span></div>
       <div class="pcard-body">
-        <h3>Trinity — Enterprise Case Management</h3>
+        <h3>Trinity - Enterprise Case Management</h3>
         <p>Modular, secure case management platform for enterprise security teams. Web + offline-first mobile + AI services + real-time geospatial mapping.</p>
         <div class="pcard-metrics">
           <div><div class="pm-val c">4</div><div class="pm-lab">Modules</div></div>
@@ -425,7 +443,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
       <div class="pcard-accent" style="background:linear-gradient(90deg,#00C4CC,#0891B2);"></div>
       <div class="pcard-head"><div class="pcard-icon" style="background:rgba(0,196,204,0.1);">🏥</div><span class="pcard-domain d-health">Healthtech</span></div>
       <div class="pcard-body">
-        <h3>Lafia — FHIR Telemedicine Platform</h3>
+        <h3>Lafia - FHIR Telemedicine Platform</h3>
         <p>FHIR R4-compliant telemedicine platform unifying health records across providers. Real-time patient-practitioner matching, video sessions, and mobile app.</p>
         <div class="pcard-metrics">
           <div><div class="pm-val c">FHIR</div><div class="pm-lab">R4 Compliant</div></div>
@@ -441,7 +459,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
       <div class="pcard-accent" style="background:linear-gradient(90deg,#06B6D4,#0891B2);"></div>
       <div class="pcard-head"><div class="pcard-icon" style="background:rgba(6,182,212,0.1);">🔬</div><span class="pcard-domain d-health">Healthtech</span></div>
       <div class="pcard-body">
-        <h3>Telerad — Radiology Reporting Platform</h3>
+        <h3>Telerad - Radiology Reporting Platform</h3>
         <p>DICOM/PACS platform bridging radiologists and referring doctors. Doctors access X-ray results, write studies, and patients access reports via RBAC.</p>
         <div class="pcard-metrics">
           <div><div class="pm-val c">DICOM</div><div class="pm-lab">Integration</div></div>
@@ -457,8 +475,8 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
       <div class="pcard-accent" style="background:linear-gradient(90deg,#10B981,#059669);"></div>
       <div class="pcard-head"><div class="pcard-icon" style="background:rgba(16,185,129,0.1);">☀️</div><span class="pcard-domain d-iot">IoT</span></div>
       <div class="pcard-body">
-        <h3>Arnergy Solarbase — IoT Platform</h3>
-        <p>Nigeria's first solar energy IoT monitoring platform — web dashboard and React Native mobile for real-time energy management. Led a 6-person team.</p>
+        <h3>Arnergy Solarbase - IoT Platform</h3>
+        <p>Nigeria's first solar energy IoT monitoring platform - web dashboard and React Native mobile for real-time energy management. Led a 6-person team.</p>
         <div class="pcard-metrics">
           <div><div class="pm-val c">6</div><div class="pm-lab">Person Team</div></div>
           <div><div class="pm-val">IoT</div><div class="pm-lab">Real-time</div></div>
@@ -493,17 +511,17 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
   <div class="reveal">
     <div class="section-label" style="color:var(--cyan);">How I Think</div>
     <div class="section-title">Architecture principles<br/>I build by</div>
-    <p class="section-sub">Decisions I make consistently — grounded in 13+ years of production experience.</p>
+    <p class="section-sub">Decisions I make consistently - grounded in 13+ years of production experience.</p>
   </div>
   <div class="arch-grid reveal">
-    <div class="arch-item"><div class="arch-num">01</div><h4>Seams before features</h4><p>I design extension points before they're needed — interfaces, not implementations. A second OCR provider or payment gateway shouldn't require touching the core flow.</p></div>
-    <div class="arch-item"><div class="arch-num">02</div><h4>Measure, then optimise</h4><p>Every performance improvement I've made started with instrumentation. The Traferium 40× gain came from timing logs proving Snowflake writes were the bottleneck — not guesswork.</p></div>
-    <div class="arch-item"><div class="arch-num">03</div><h4>Modular monolith first</h4><p>New products get a modular monolith with enforced boundaries — one deployment, no distributed system overhead. Extract services when you feel the pain of not having done so.</p></div>
-    <div class="arch-item"><div class="arch-num">04</div><h4>Business rules in the backend</h4><p>Eligibility, pricing, approval logic — always in the service layer. Testable, version-controlled, consistently applied regardless of which client calls the API.</p></div>
+    <div class="arch-item"><div class="arch-num">01</div><h4>Seams before features</h4><p>I design extension points before they're needed - interfaces, not implementations. A second OCR provider or payment gateway shouldn't require touching the core flow.</p></div>
+    <div class="arch-item"><div class="arch-num">02</div><h4>Measure, then optimise</h4><p>Every performance improvement I've made started with instrumentation. The Traferium 40× gain came from timing logs proving Snowflake writes were the bottleneck - not guesswork.</p></div>
+    <div class="arch-item"><div class="arch-num">03</div><h4>Modular monolith first</h4><p>New products get a modular monolith with enforced boundaries - one deployment, no distributed system overhead. Extract services when you feel the pain of not having done so.</p></div>
+    <div class="arch-item"><div class="arch-num">04</div><h4>Business rules in the backend</h4><p>Eligibility, pricing, approval logic - always in the service layer. Testable, version-controlled, consistently applied regardless of which client calls the API.</p></div>
     <div class="arch-item"><div class="arch-num">05</div><h4>Idempotency by default</h4><p>In financial and transactional systems, every state-changing operation gets an idempotency key. Networks fail, clients retry, and duplicate transactions are not acceptable.</p></div>
     <div class="arch-item"><div class="arch-num">06</div><h4>Silent failures are the worst</h4><p>A system that crashes loudly is better than one that silently returns wrong data. I design jobs with explicit output assertions and observability at every stage boundary.</p></div>
-    <div class="arch-item"><div class="arch-num">07</div><h4>Let duplication teach you</h4><p>Don't abstract until the pattern is clear. Three similar workflows need to be understood side-by-side before building a generic engine — premature abstraction is harder to undo than duplication.</p></div>
-    <div class="arch-item"><div class="arch-num">08</div><h4>Write decisions down</h4><p>Every architectural decision gets an ADR — context, options considered, trade-offs. It eliminates repeated debates, accelerates onboarding, and makes code reviews sharper.</p></div>
+    <div class="arch-item"><div class="arch-num">07</div><h4>Let duplication teach you</h4><p>Don't abstract until the pattern is clear. Three similar workflows need to be understood side-by-side before building a generic engine - premature abstraction is harder to undo than duplication.</p></div>
+    <div class="arch-item"><div class="arch-num">08</div><h4>Write decisions down</h4><p>Every architectural decision gets an ADR - context, options considered, trade-offs. It eliminates repeated debates, accelerates onboarding, and makes code reviews sharper.</p></div>
   </div>
 </section>
 
@@ -512,37 +530,37 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
   <div class="reveal">
     <div class="section-label">AI Engineering</div>
     <div class="section-title">AI that ships and stays<br/>reliable in production</div>
-    <p class="section-sub">I build intelligent features as production backend capabilities — not demos. Every AI integration is designed for reliability, observability, and graceful degradation.</p>
+    <p class="section-sub">I build intelligent features as production backend capabilities - not demos. Every AI integration is designed for reliability, observability, and graceful degradation.</p>
   </div>
   <div class="ai-grid reveal">
     <div class="ai-card">
       <div class="ai-card-icon">🎯</div>
       <h4>AI-driven Matching Engine</h4>
-      <p>Designed JuMa's candidate-job matching engine — multi-dimensional profile compatibility scoring with Kafka-driven async processing and Redis-cached recommendations.</p>
+      <p>Designed JuMa's candidate-job matching engine - multi-dimensional profile compatibility scoring with Kafka-driven async processing and Redis-cached recommendations.</p>
       <div class="ai-tags"><span class="atag">Matching Algorithms</span><span class="atag">Kafka</span><span class="atag">Redis</span><span class="atag">Spring Boot</span></div>
     </div>
     <div class="ai-card">
       <div class="ai-card-icon">📋</div>
       <h4>AI Report Classification</h4>
-      <p>Integrated automated report classification into Trinity's case management system — classifying incident reports and routing them to the correct investigation workflow.</p>
+      <p>Integrated automated report classification into Trinity's case management system - classifying incident reports and routing them to the correct investigation workflow.</p>
       <div class="ai-tags"><span class="atag">Classification</span><span class="atag">NLP</span><span class="atag">React Native</span><span class="atag">API Integration</span></div>
     </div>
     <div class="ai-card">
       <div class="ai-card-icon">🔍</div>
       <h4>Intelligent Search</h4>
-      <p>Built smart search across Trinity's case records — semantic matching beyond keyword search, with AI-powered suggestion ranking and query intent understanding.</p>
+      <p>Built smart search across Trinity's case records - semantic matching beyond keyword search, with AI-powered suggestion ranking and query intent understanding.</p>
       <div class="ai-tags"><span class="atag">Semantic Search</span><span class="atag">Embeddings</span><span class="atag">Ranking</span><span class="atag">TypeScript</span></div>
     </div>
     <div class="ai-card">
       <div class="ai-card-icon">👨‍⚕️</div>
       <h4>Smart Practitioner Matching</h4>
-      <p>Lafia's AI care broadcast system — analysing patient symptom descriptions to intelligently match and route to the most suitable available practitioners in real time.</p>
+      <p>Lafia's AI care broadcast system - analysing patient symptom descriptions to intelligently match and route to the most suitable available practitioners in real time.</p>
       <div class="ai-tags"><span class="atag">NLP</span><span class="atag">FHIR</span><span class="atag">Real-time</span><span class="atag">Java</span></div>
     </div>
     <div class="ai-card">
       <div class="ai-card-icon">📊</div>
       <h4>Data Validation Intelligence</h4>
-      <p>Custom Great Expectations suites for the Traferium pipeline — intelligent data quality checks encoding domain-specific rules that standard expectations couldn't cover.</p>
+      <p>Custom Great Expectations suites for the Traferium pipeline - intelligent data quality checks encoding domain-specific rules that standard expectations couldn't cover.</p>
       <div class="ai-tags"><span class="atag">Great Expectations</span><span class="atag">Python</span><span class="atag">Data Quality</span><span class="atag">Pipeline</span></div>
     </div>
     <div class="ai-card">
@@ -559,7 +577,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
   <div class="reveal">
     <div class="section-label">Career</div>
     <div class="section-title">13+ years of<br/>production engineering</div>
-    <p class="section-sub">Fintech, healthtech, security SaaS, IoT, data engineering — always owning the outcome.</p>
+    <p class="section-sub">Fintech, healthtech, security SaaS, IoT, data engineering - always owning the outcome.</p>
   </div>
   <div class="timeline">
     <div class="tl-item reveal">
@@ -573,7 +591,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
     <div class="tl-item reveal">
       <div class="tl-dot"></div>
       <div class="tl-date">Aug 2021 – Mar 2023</div>
-      <div class="tl-role">Senior Software Engineer — R&amp;D</div>
+      <div class="tl-role">Senior Software Engineer - R&amp;D</div>
       <div class="tl-company">Newwave Collaboration Center Inc. · Maryland, USA (Remote)</div>
       <div class="tl-desc">R&D engineer delivering healthtech and cloud data platforms. 40× throughput improvement on Traferium. Built Lafia FHIR telemedicine platform, Telerad DICOM radiology system, and Oracle-Snowflake transpiler.</div>
       <div class="tl-tags"><span class="ttag">Java</span><span class="ttag">Python</span><span class="ttag">FHIR</span><span class="ttag">DICOM</span><span class="ttag">Kafka</span><span class="ttag">Snowflake</span><span class="ttag">AWS</span><span class="ttag">Kubernetes</span></div>
@@ -583,7 +601,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
       <div class="tl-date">Feb 2018 – Sep 2021</div>
       <div class="tl-role">Senior Software Engineer &amp; Team Lead</div>
       <div class="tl-company">Centric Gateway Limited (Seerbit) · Lagos, Nigeria</div>
-      <div class="tl-desc">Led engineering for Seerbit's core fintech payment products — IMTO, merchant gateway, API management, and payment modal. Introduced TDD, code review standards, and security best practices. Led team of 6.</div>
+      <div class="tl-desc">Led engineering for Seerbit's core fintech payment products - IMTO, merchant gateway, API management, and payment modal. Introduced TDD, code review standards, and security best practices. Led team of 6.</div>
       <div class="tl-tags"><span class="ttag">Java</span><span class="ttag">Spring Boot</span><span class="ttag">Fintech</span><span class="ttag">IMTO</span><span class="ttag">CBN Compliance</span><span class="ttag">Team Lead</span></div>
     </div>
     <div class="tl-item reveal">
@@ -591,7 +609,7 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
       <div class="tl-date">Feb 2017 – Mar 2018</div>
       <div class="tl-role">Lead Frontend Engineer</div>
       <div class="tl-company">Arnergy Solar Limited · Lagos, Nigeria</div>
-      <div class="tl-desc">Led a 6-person team delivering Arnergy's first IoT platform (Solarbase) — web and React Native mobile for real-time solar energy monitoring. Contributed to Node.js backend IoT services.</div>
+      <div class="tl-desc">Led a 6-person team delivering Arnergy's first IoT platform (Solarbase) - web and React Native mobile for real-time solar energy monitoring. Contributed to Node.js backend IoT services.</div>
       <div class="tl-tags"><span class="ttag">React.js</span><span class="ttag">React Native</span><span class="ttag">Node.js</span><span class="ttag">IoT</span><span class="ttag">Team Lead</span></div>
     </div>
     <div class="tl-item reveal">
@@ -611,6 +629,33 @@ footer span{font-family:var(--mono);font-size:0.68rem;color:rgba(255,255,255,0.2
     <span class="section-label">Get In Touch</span>
     <div class="section-title" style="text-align:center;">Let's build something<br/>that scales.</div>
     <p>Open to senior backend, frontend, mobile, fullstack, solution architecture, and AI engineering roles. Remote-first. Lagos, Nigeria.</p>
+
+    <form class="contact-form" id="contact-form">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your name" required/>
+        </div>
+        <div class="form-field">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@company.com" required/>
+        </div>
+      </div>
+      <div class="form-field">
+        <label for="cf-subject">Subject</label>
+        <input type="text" id="cf-subject" name="subject" placeholder="Role, company, or what this is about"/>
+      </div>
+      <div class="form-field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="5" placeholder="Tell me a bit about the opportunity or what you'd like to discuss" required></textarea>
+      </div>
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+      <button type="submit" class="form-submit" id="cf-submit">Send Message</button>
+      <div class="form-status" id="cf-status"></div>
+    </form>
+
+    <div class="contact-divider"><span>Or reach me directly</span></div>
+
     <div class="contact-links">
       <a href="mailto:tosyngy@gmail.com" class="clink primary">Email Me</a>
       <a href="https://linkedin.com/in/tosyngy" class="clink" target="_blank">LinkedIn</a>
@@ -646,6 +691,46 @@ function openTab(id) {
   document.getElementById('specialisations').scrollIntoView({ behavior: 'smooth' });
   setTimeout(() => switchTab(id), 400);
   return false;
+}
+
+// Contact form submission (via FormSubmit.co -> emails tosyngy@gmail.com)
+const cfForm = document.getElementById('contact-form');
+if (cfForm) {
+  cfForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    const btn = document.getElementById('cf-submit');
+    const status = document.getElementById('cf-status');
+    const data = new FormData(cfForm);
+    data.append('_subject', 'New portfolio contact from ' + (data.get('name') || 'website visitor'));
+    data.append('_captcha', 'false');
+    data.append('_template', 'table');
+
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    status.textContent = '';
+    status.className = 'form-status';
+
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/tosyngy@gmail.com', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: data
+      });
+      if (res.ok) {
+        status.textContent = "Thanks - your message is on its way. I'll get back to you soon.";
+        status.classList.add('ok');
+        cfForm.reset();
+      } else {
+        throw new Error('Request failed');
+      }
+    } catch (err) {
+      status.textContent = "Something went wrong - please email me directly at tosyngy@gmail.com.";
+      status.classList.add('err');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Send Message';
+    }
+  });
 }
 
 // Active nav highlighting
